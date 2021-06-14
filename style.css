@@ -1,0 +1,139 @@
+@import url("./fonts.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* What do you expect me to say here too? */
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+html,
+body {
+  margin: 0px;
+}
+
+/* The body of the page.Nothing else */
+body {
+  font-kerning: none;
+  min-height: 100%;
+  line-height: normal !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+a {
+  outline: none;
+  user-select: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none !important;
+}
+
+.page-holder {
+  min-height: 100vh;
+}
+
+.bg-cover {
+  background-size: cover !important;
+}
+
+.baloo-font {
+  font-family: "Baloo Tammudu 2", cursive !important;
+}
+
+.primary-cust-text-color {
+  color: rgb(72, 212, 255) !important;
+}
+
+#form-wrapper {
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+.form-div {
+  position: relative !important;
+  border: 2px groove whitesmoke !important;
+  border-radius: 0.35rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  padding: 0.4rem !important;
+  border-radius: 0.25rem;
+  background-color: transparent !important;
+  border: 1px solid silver !important;
+  color: whitesmoke !important;
+  font-size: 1.2rem;
+}
+
+/* input::placeholder,
+label,
+select {
+  text-transform: capitalize !important;
+} */
+
+label {
+  color: white;
+}
+
+select {
+  padding: 0.4rem !important;
+  margin-bottom: 0.1rem !important;
+  border-radius: 0.25rem;
+  background-color: whitesmoke !important;
+  color: black !important;
+}
+
+.submit {
+  width: 7rem;
+  background-color: rgb(0, 105, 0);
+  color: white;
+  border: none;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tp-dark-bg {
+  background: #000000e0 !important;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.bg-darker {
+  background: #000000ea !important;
+}
+
+#signin {
+  font-family: "Mukta", sans-serif !important;
+  letter-spacing: 0.5px;
+}
+
+/*   It's  media queries time !!!!   */
+
+/* Smartphone media query*/
+@media screen and (max-width: 767px) {
+  .form-div {
+    width: 98% !important;
+  }
+  .register-text {
+    margin: 0.4rem !important;
+    word-wrap: break-word !important;
+  }
+}

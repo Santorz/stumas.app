@@ -1,4 +1,5 @@
 var insertion_form = document.getElementById('insert-info-form');
+var sql_result_div = document.getElementById('sql-result-div');
 
 var username_input_box = document.getElementById('username-input-box');
 var gender_selection_list = document.getElementById('gender-selction-list');
@@ -33,6 +34,9 @@ insertion_form.addEventListener('submit', (e) => {
 
 			console.log(this.responseText);
 
+			sql_result_div.innerHTML = '<h4 class="text-success">' + this.responseText + '</h4>';
+
+
 		}
 		else {
 			// alert(Error-   + xmlhttp.status + ":"  + xmlhttp.statusText);
@@ -40,7 +44,7 @@ insertion_form.addEventListener('submit', (e) => {
 
 	}; //end onreadystate
 
-	xmlhttp.open("POST", "insert-info.php", true);
+	xmlhttp.open("POST", "php/insert-info.php", true);
 	xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	//xmlhttp.open("GET", "simpleGreet.php?x=" + obj.table, true);
 	xmlhttp.send("newUserDetails=" + userDetailsObjectJSON);

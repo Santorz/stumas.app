@@ -1,7 +1,7 @@
 var retrieve_button = document.getElementById('retrieve-button');
 var retrieval_form = document.getElementById('retrieval-form');
 var students_name_field = document.getElementById('students-name');
-var sql_result_div = document.getElementById('sql-result-div')
+var sql_result_div = document.getElementById('sql-result-div');
 
 retrieval_form.onsubmit = (e) => {
   e.preventDefault();
@@ -48,7 +48,7 @@ function processInfoWithName(name) {
 
   }; //end onreadystate
 
-  xmlhttp.open("POST", "retrieve-info.php", true);
+  xmlhttp.open("POST", "php/retrieve-info.php", true);
   xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   //xmlhttp.open("GET", "simpleGreet.php?x=" + obj.table, true);
   xmlhttp.send("uname=" + yy);

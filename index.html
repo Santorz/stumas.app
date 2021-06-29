@@ -28,30 +28,53 @@
         <div class=" row">
 
             <div class=" col-12 text-center min-vh-100 h-100
-            d-flex flex-column py-2 tp-dark-bg px-1" id="form-wrapper">
+            d-flex flex-column py-0 tp-dark-bg px-1" id="form-wrapper">
 
-                <h2 class="baloo-font primary-cust-text-color">Student Information Form</h2>
+                <nav class="col-12 d-flex justify-content-around shadow border-light py-2 baloo-font">
+                    <h2 class="primary-cust-text-color h2">stumas.app</h2>
+                    <ul class="h6 mb-0 d-flex align-items-center">
+                        <li>
+                            <a href="retrieve-info/" class="primary-cust-text-color align-self-center nav-link">
+                                View Students' Details
+                            </a>
+                        </li>
+                        <li>
+                            <a class="primary-cust-text-color align-self-center nav-link">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a class="primary-cust-text-color align-self-center nav-link">
+                                About
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
                 <div class="d-flex my-2 flex-column flex-md-row">
 
                     <!-- Insert Info Div -->
-                    <div class="col-11 col-sm-7 col-md-5 col-xl-4 py-3 my-3 mx-auto my-md-0 form-div 
-                                            bg-darker px-1 position-relative">
+                    <div class="col-11 col-sm-8 col-md-6 col-xl-5 py-3 mt-5 mx-auto my-md-0 form-div 
+                    bg-darker px-1 position-relative">
+
                         <h4 class="text-center baloo-font text-light mb-3 border-light border-bottom d-inline-block">
                             Register Student</h4>
 
-                        <form class="d-flex flex-wrap justify-content-center" 
-                        id="insert-info-form">
-                            <span class="col-6 d-flex flex-column my-1 px-1 pl-0 ">
+                        <form
+                            class="d-flex flex-column flex-md-row flex-wrap justify-content-center px-lg-3 align-items-center"
+                            id="insert-info-form">
+
+                            <span class="col-11 col-md-6 d-flex flex-column my-1 px-1 pl-0">
                                 <label for="username-input-box">Username:</label>
-                                <input type="text" name="username-input-box" id="username-input-box"
-                                required="true" placeholder="Enter Username..." minlength="5" maxlength="15">
+                                <input type="text" name="username-input-box" id="username-input-box" required="true"
+                                    placeholder="Enter Username..." minlength="5" maxlength="15"
+                                    class="text-center baloo-font" style="padding: 0 !important;">
                             </span>
 
-                            <span class="col-6 d-flex flex-column my-1 px-2 pr-0 ">
+                            <span class=" col-11 col-md-6 d-flex flex-column my-1 px-2 pr-0 ">
                                 <label for="gender-selction-list">GENDER</label>
                                 <select name="gender-selction-list" id="gender-selction-list"
-                                    class="btn-outline-light bg-light baloo-font" required>
+                                    class="btn-outline-light bg-light baloo-font px-3 pt-1 pb-0" required>
                                     <option value="">Select Gender</option>
                                     <option value="M">Male</option>
                                     <option value="F">Female</option>
@@ -60,9 +83,8 @@
 
                             <span class="col-12 px-2 d-flex align-items-center justify-content-center">
                                 <div class="col-6 px-0 d-flex my-1 align-items-center justify-content-center">
-                                    <label for="matric-number-input-box" class="px-2">MATRIC NUMBER</label>
+                                    <label for="matric-number-input-box" class="px-2 mb-0 h6">MATRIC NUMBER :</label>
 
-                                    <h4 class="primary-cust-text-color mb-0 d-inline">&nbsp; => &nbsp;</h4>
                                 </div>
 
                                 <div class="col-6 px-0 d-flex my-1 align-items-center">
@@ -80,71 +102,9 @@
 
                             <!-- <input type="text" name="" id="" class="form-control"> -->
                         </form>
-                    </div>
-
-                    <!-- Retrieve Info Div -->
-                    <div class="col-11 col-sm-7 col-md-5 col-xl-4 py-3 my-3 mx-auto my-md-0 form-div 
-                        bg-darker px-1 position-relative">
-                        <h4 class="text-center baloo-font text-light mb-3 border-light border-bottom d-inline-block">
-                            Retrieve Student Info</h4>
-                        <form class="d-flex flex-wrap justify-content-center align-items-center" id="retrieval-form">
-                            <!-- <span class="col-6 d-flex flex-column my-1 px-1 pl-0 ">
-                                <label for="selction-attribute-list">SELECT</label>
-                                <select name="selction-attribute-list" id="selction-attribute-list"
-                                    class="btn-outline-light bg-light baloo-font" required>
-                                    <option value="">What to select</option>
-                                </select>
-                            </span> -->
-
-                            <!-- <span class="col-6 d-flex flex-column my-1 px-1 pr-0 ">
-                                <label for="selction-table-list">FROM</label>
-                                <select name="selction-table-list" id="selction-table-list"
-                                    class="btn-outline-light bg-light baloo-font" required>
-                                    <option value="">Table to select from</option>
-                                </select>
-                            </span> -->
-
-                            <!-- <span class="col-12 px-0 d-flex">
-                                <div class="col-6 px-0 d-flex my-1 align-items-center">
-                                    <label for="selction-condition-list" class="px-2">WHERE</label>
-                                    <select name="selction-condition-list" id="selction-condition-list"
-                                        class="btn-outline-light bg-light baloo-font">
-                                        <option value="">Condition</option>
-                                    </select>
-                                    <h4 class="primary-cust-text-color mb-0 d-inline">&nbsp; = &nbsp;</h4>
-                                </div>
-
-
-                                <div class="col-6 px-0 d-flex my-1 align-items-center">
-                                    <input type="text" name="select-condition-value" id="select-condition-value"
-                                        style="width: 100% !important;" class="text-white text-center">
-                                </div>
-
-                            </span> -->
-
-                            <label for="students-name" class="mr-2">Input Student's Name : </label>
-                            <input type="text" name="students-name" id="students-name" required>
-
-                            <!-- <input type="text" name="" id="" class="form-control"> -->
-                            <div class="col-12 mt-2">
-                                <button value="Retrieve Info" class="btn btn-outline-info text-white"
-                                    id="retrieve-button">
-                                    Retrieve Student Info
-                                </button>
-                            </div>
-
-                        </form>
-                    </div>
-
-
-                </div>
-
-                <div class="my-2">
-                    <!-- Output Div -->
-                    <div class="col-12 col-sm-8 col-md-7 p-5 mx-auto form-div primary-cust-text-color"
-                        id="sql-result-div">
 
                     </div>
+
                 </div>
 
 
@@ -185,7 +145,6 @@
         crossorigin="anonymous"></script>
 
     <!-- load JS files -->
-    <script src="js/retrieve-info.js"></script>
     <script src="js/insert-info.js"></script>
 
 

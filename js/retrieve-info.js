@@ -48,7 +48,7 @@ function processInfoWithName(name) {
 
   }; //end onreadystate
 
-  xmlhttp.open("POST", "php/retrieve-info.php", true);
+  xmlhttp.open("POST", "../php/retrieve-info.php", true);
   xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   //xmlhttp.open("GET", "simpleGreet.php?x=" + obj.table, true);
   xmlhttp.send("uname=" + yy);

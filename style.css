@@ -43,6 +43,12 @@ a:focus {
   text-decoration: none !important;
 }
 
+a.nav-link:hover,
+a.nav-link:focus {
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
+
 .page-holder {
   min-height: 100vh;
 }
@@ -53,6 +59,7 @@ a:focus {
 
 .baloo-font {
   font-family: "Baloo Tammudu 2", cursive !important;
+  line-height: 1rem !important;
 }
 
 .primary-cust-text-color {
